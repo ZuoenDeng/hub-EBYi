@@ -64,7 +64,5 @@ def text_classification_by_llm(text: str) -> str:
             帮我对以上的内容进行分类，从以下的类别中进行选择，并且除了类别信息其他内容全部删除，只返回类别名称：{dataset[1].unique()}
             """},  # 用户的提问
         ]
-
-
     )
     return completion.choices[0].message.content
